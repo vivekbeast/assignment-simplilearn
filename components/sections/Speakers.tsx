@@ -42,7 +42,7 @@ Sudipto Mitra is a senior transformation and growth leader with over 20 years of
       </div>
       <div className=' w-full h-48.75 md:h-56 relative'>
               <Image
-                src="/background/try SLH+.svg"
+                src="/background/blue.svg"
                 alt="background"
                 fill
                 priority

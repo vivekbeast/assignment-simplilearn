@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative h-[88vh] min-h-125 w-full px-5 py-7 md:px-23.25 md:py-14">
+    <section className="relative h-[85vh] md:h-[88vh] min-h-125 w-full px-5 py-7 md:px-23.25 md:py-14">
       {/* Background image */}
       <Image
         src="/background/homescreen.png"

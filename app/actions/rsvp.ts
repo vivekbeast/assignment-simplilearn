@@ -13,7 +13,10 @@ export async function rsvpAction(formData: FormData): Promise<void> {
     return;
   }
 
+  
+
   await base(process.env.AIRTABLE_TABLE_NAME!).create({
     Email: email, // or Email — must match Airtable column
   });
+ 
 }
