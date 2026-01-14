@@ -15,8 +15,7 @@ The goal of this assignment is to demonstrate:
 
 ## 🚀 Live Demo
 
-- **Live URL:** 
-- **GitHub Repository:** 
+- **Live URL:** https://vivek-simplilearn.vercel.app/
 
 ---
 
