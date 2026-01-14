@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assignment – Next.js Landing Page (Option A)
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a **pixel-perfect landing page implementation** built using **Next.js (App Router)** based on the provided Figma design (Option A).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The goal of this assignment is to demonstrate:
+- Accurate translation of design to code
+- Proper usage of modern Next.js features
+- Clean architecture with Server Components and Server Actions
+- Functional backend integration using Airtable
+- High performance and full responsiveness
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Live URL:** 
+- **GitHub Repository:** 
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js (latest version) – App Router
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **Backend Integration:** Airtable
+- **Form Handling:** Server Actions (no API routes)
+- **Deployment:** Vercel / Netlify
+- **AI Tooling:** ChatGPT / v0.dev (used for iteration and scaffolding)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+assignment-sim/
+│
+├── app/
+│   ├── actions/
+│   │   └── rsvp.ts              # Server Action (Airtable submission)
+│   │
+│   ├── favicon.ico
+│   ├── globals.css              # Global styles + Tailwind
+│   ├── layout.tsx               # Root layout (Server Component)
+│   └── page.tsx                 # Single-page entry point
+│
+├── components/
+│   └── sections/
+│       ├── Hero.tsx             # Hero section
+│       ├── Overview.tsx         # Overview + RSVP entry
+│       ├── Agenda.tsx           # Agenda section
+│       ├── Speakers.tsx         # Speakers section
+│       └── Rsvpform.tsx         # Reusable RSVP form
+│
+├── public/
+│   └── background/              # Images & SVG assets
+│
+├── css/
+│   └── satoshi.css              # Font definitions
+│
+├── fonts/                       # Local font files
+│
+├── .env.local                   # Environment variables (local only)
+├── next.config.ts
+├── tailwind.config.js
+├── postcss.config.mjs
+├── tsconfig.json
+└── package.json
